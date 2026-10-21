@@ -1,0 +1,16 @@
+
+<h2>Food Items</h2>
+
+{% for food in foods %}
+    <p>{{ food }}</p>
+{% empty %}
+    <p>No food items found.</p>
+{% endfor %}
+
+<h2>Food Orders</h2>
+
+{% for order in orders %}
+    <p>{{ order }}</p>
+{% empty %}
+    <p>No food orders found.</p>
+{% endfor %}
